@@ -57,23 +57,28 @@ const services = [
   },
   {
     title: 'Manutenção de Geradores',
-    description: 'Energia de reserva sempre pronta.'
+    description: 'Energia de reserva sempre pronta.',
+    icon: 'gear'
   },
   {
     title: 'Projeto e Montagem de Cabine Primária',
-    description: 'Estruturas elétricas robustas, projetadas para o futuro.'
+    description: 'Estruturas elétricas robustas, projetadas para o futuro.',
+    icon: 'installation'
   },
   {
     title: 'Distribuição e QGBT',
-    description: 'Distribuição elétrica segura e eficiente.'
+    description: 'Distribuição elétrica segura e eficiente.',
+    icon: 'gauge'
   },
   {
     title: 'Manutenção e Automação de Quadros de Comando',
-    description: 'Controle total para máximo desempenho.'
+    description: 'Controle total para máximo desempenho.',
+    icon: 'tech'
   },
   {
     title: 'Identificação de Falhas e Perdas',
-    description: 'Diagnóstico preciso para eficiência energética.'
+    description: 'Diagnóstico preciso para eficiência energética.',
+    icon: 'vision'
   }
 ]
 
@@ -102,7 +107,7 @@ export default function EletricaIndustrial() {
                 key={index}
                 title={service.title}
                 description={service.description}
-                icon={service.icon}
+                icon={service.icon || 'default'}
               />
             ))}
           </div>
