@@ -1,5 +1,5 @@
-import { redirect } from 'next/navigation';
+import { NextResponse } from 'next/server';
 
 export async function GET() {
-  return redirect('/sitemap.xml', 301);
+  return NextResponse.redirect(new URL('/sitemap.xml', 'https://imsmanutencao.com.br'), 301);
 }
