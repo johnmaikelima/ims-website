@@ -5,8 +5,32 @@ import { FaTools, FaBuilding, FaShieldAlt, FaCheckCircle, FaIndustry, FaClipboar
 
 export const metadata: Metadata = {
   title: 'Integridade Estrutural: Garantia de Segurança e Durabilidade | IMS Manutenção',
-  description: 'Conheça a importância da integridade estrutural na indústria. Serviços especializados em análise, manutenção e reforço de estruturas metálicas e de concreto.',
-  keywords: ['integridade estrutural', 'análise estrutural', 'manutenção predial', 'estruturas metálicas', 'inspeção de estruturas', 'reforço estrutural', 'engenharia estrutural', 'patologia das estruturas'],
+  description: 'Serviços especializados em análise, manutenção e reforço de estruturas metálicas e de concreto. Garanta a segurança e durabilidade das suas instalações industriais.',
+  keywords: [
+    'integridade estrutural', 
+    'análise estrutural', 
+    'manutenção predial', 
+    'estruturas metálicas', 
+    'inspeção de estruturas', 
+    'reforço estrutural', 
+    'engenharia estrutural', 
+    'patologia das estruturas',
+    'vistoria estrutural',
+    'avaliação estrutural',
+    'laudo técnico estrutural',
+    'manutenção de estruturas'
+  ],
+  openGraph: {
+    title: 'Integridade Estrutural: Garantia de Segurança e Durabilidade | IMS Manutenção',
+    description: 'Serviços especializados em análise, manutenção e reforço de estruturas metálicas e de concreto. Garanta a segurança das suas instalações.',
+    type: 'article',
+    publishedTime: '2025-06-04T00:00:00.000Z',
+    authors: ['IMS Manutenção'],
+    tags: ['engenharia', 'manutenção industrial', 'estruturas metálicas']
+  },
+  alternates: {
+    canonical: '/informacoes/integridade-estrutural'
+  }
 };
 
 export default function IntegridadeEstrutural() {
