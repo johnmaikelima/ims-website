@@ -1,7 +1,7 @@
 'use client';
 
 import { FormEvent, useState, ChangeEvent, useEffect } from 'react';
-import { FaEnvelope, FaCheckCircle, FaExclamationTriangle } from 'react-icons/fa6';
+import { FaEnvelope, FaCheck, FaExclamation } from 'react-icons/fa6';
 
 export type FormData = {
   name: string;
@@ -236,9 +236,9 @@ export default function ContactForm() {
         >
           <div className="flex-shrink-0 mr-3">
             {submitStatus.success ? (
-              <FaCheckCircle className="h-5 w-5 text-green-600" />
+              <FaCheck className="h-5 w-5 text-green-600" />
             ) : (
-              <FaExclamationTriangle className="h-5 w-5 text-red-600" />
+              <FaExclamation className="h-5 w-5 text-red-600" />
             )}
           </div>
           <div className="text-sm md:text-base font-medium">
