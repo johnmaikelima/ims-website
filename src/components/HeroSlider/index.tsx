@@ -4,6 +4,7 @@ import { useCallback, useState, useEffect } from 'react';
 import { Swiper as SwiperType } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay, A11y } from 'swiper/modules';
+import FallbackImage from '@/components/FallbackImage';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -138,7 +139,7 @@ export default function HeroSlider() {
         {slides.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="relative h-full w-full">
-              {/* Imagem de fundo otimizada */}
+              {/* Imagem de fundo otimizada com fallback */}
               <div 
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
@@ -150,14 +151,22 @@ export default function HeroSlider() {
                 }}
                 role="img"
                 aria-label={slide.alt || slide.title}
+                onError={(e) => {
+                  // Fallback para imagem de fundo
+                  (e.target as HTMLElement).style.backgroundImage = 'url(/images/placeholder.svg)';
+                }}
               >
-                {/* Imagem para SEO e acessibilidade */}
-                <img 
-                  src={slide.image} 
-                  alt={slide.alt || slide.title} 
-                  className="sr-only"
-                  loading={index === 0 ? 'eager' : 'lazy'}
-                />
+                {/* Imagem para SEO e acessibilidade com fallback */}
+                <span className="sr-only">
+                  <FallbackImage
+                    src={slide.image}
+                    alt={slide.alt || slide.title}
+                    fallbackSrc="/images/placeholder.svg"
+                    width={1200}
+                    height={800}
+                    loading={index === 0 ? 'eager' : 'lazy'}
+                  />
+                </span>
               </div>
               
               {/* Overlay escuro para melhor legibilidade */}

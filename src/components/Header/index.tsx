@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
+import FallbackImage from '@/components/FallbackImage'
 import Logo from '@/components/Logo'
 
 const services = [
@@ -42,13 +42,14 @@ export default function Header() {
             {/* Logo mobile - maior */}
             <div className="flex items-center py-3">
               <Link href="/" className="flex items-center">
-                <Image
+                <FallbackImage
                   src="https://imsmanutencao.com.br/wp-content/uploads/2025/01/imagem_2025-01-13_123646591.png"
                   alt="IMS Manutenção Logo"
                   width={280}
                   height={75}
                   className="h-20 w-auto"
                   priority
+                  fallbackSrc="/images/placeholder.svg"
                 />
               </Link>
             </div>

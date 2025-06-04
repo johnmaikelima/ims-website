@@ -1,7 +1,7 @@
 'use client';
 
-import Image from 'next/image';
 import { useState } from 'react';
+import FallbackImage from '@/components/FallbackImage';
 
 interface ImageGalleryProps {
   images: {
@@ -19,12 +19,13 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
     <div className="my-8">
       {/* Main Image */}
       <div className="relative w-full h-[400px] mb-4">
-        <Image
+        <FallbackImage
           src={images[selectedImage].src}
           alt={images[selectedImage].alt}
           fill
           className="object-cover rounded-lg"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+          fallbackSrc="/images/placeholder.svg"
         />
       </div>
 
@@ -38,12 +39,13 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
               selectedImage === index ? 'ring-2 ring-blue-600' : ''
             }`}
           >
-            <Image
+            <FallbackImage
               src={image.src}
               alt={image.alt}
               fill
               className="object-cover"
               sizes="(max-width: 768px) 25vw, 20vw"
+              fallbackSrc="/images/placeholder.svg"
             />
           </button>
         ))}
