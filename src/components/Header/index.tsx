@@ -2,16 +2,14 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import Logo from '@/components/Logo'
 
 const services = [
   { name: 'Elétrica Industrial', href: '/servicos/eletrica-industrial' },
   { name: 'Mecânica Industrial', href: '/servicos/mecanica-industrial' },
   { name: 'Manutenção Hidráulica e Pneumática', href: '/servicos/manutencao-hidraulica-pneumatica' },
-  { name: 'Integridade Estrutural', href: '/servicos/integridade-estrutural' },
-  { name: 'Teste Hidrostático', href: '/servicos/teste-hidrostatico' },
-  { name: 'Teste de Estanqueidade', href: '/servicos/teste-estanqueidade' },
-  { name: 'Laudo NR13', href: '/servicos/laudo-nr13' }
+  { name: 'Integridade Estrutural', href: '/servicos/integridade-estrutural' }
 ]
 
 const infoPages = [
@@ -38,7 +36,70 @@ export default function Header() {
   return (
     <header className="bg-white shadow-md relative z-50">
       <nav className="container mx-auto px-4">
-        <div className="flex justify-between h-16">
+        {/* Mobile header com logo maior e botão de orçamento abaixo */}
+        <div className="flex flex-col md:hidden">
+          <div className="flex justify-between items-center">
+            {/* Logo mobile - maior */}
+            <div className="flex items-center py-3">
+              <Link href="/" className="flex items-center">
+                <Image
+                  src="https://imsmanutencao.com.br/wp-content/uploads/2025/01/imagem_2025-01-13_123646591.png"
+                  alt="IMS Manutenção Logo"
+                  width={280}
+                  height={75}
+                  className="h-20 w-auto"
+                  priority
+                />
+              </Link>
+            </div>
+
+            {/* Mobile menu button */}
+            <div className="flex items-center">
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-900 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500"
+              >
+                <span className="sr-only">Abrir menu principal</span>
+                <svg
+                  className="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  {isMobileMenuOpen ? (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  ) : (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  )}
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          {/* Botão de orçamento mobile - abaixo do logo */}
+          <div className="flex justify-center pb-3">
+            <Link
+              href="/solicitar-orcamento"
+              className="bg-yellow-500 text-blue-900 px-6 py-2 rounded-lg font-medium hover:bg-yellow-400 transition-colors"
+            >
+              Solicitar Orçamento
+            </Link>
+          </div>
+        </div>
+
+        {/* Desktop header original */}
+        <div className="hidden md:flex justify-between h-16 items-center">
           {/* Logo */}
           <div className="flex items-center">
             <Logo />
@@ -101,6 +162,7 @@ export default function Header() {
                 </div>
               </div>
             </div>
+
             <Link
               href="/produtos"
               className="text-gray-700 hover:text-blue-900 px-3 py-2 rounded-md text-sm font-medium"
@@ -113,45 +175,16 @@ export default function Header() {
             >
               Sobre Nós
             </Link>
+          </div>
+          
+          {/* Botão de orçamento desktop */}
+          <div className="flex items-center">
             <Link
-              href="/#orcamento"
-              className="bg-yellow-500 text-blue-900 px-4 py-2 rounded-md text-sm font-medium hover:bg-yellow-400"
+              href="/solicitar-orcamento"
+              className="bg-yellow-500 text-blue-900 px-4 py-2 rounded-lg font-medium hover:bg-yellow-400 transition-colors"
             >
               Solicitar Orçamento
             </Link>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-blue-900 hover:bg-gray-100"
-            >
-              <span className="sr-only">Abrir menu principal</span>
-              <svg
-                className="h-6 w-6"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                {isMobileMenuOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                )}
-              </svg>
-            </button>
           </div>
         </div>
 
@@ -243,7 +276,7 @@ export default function Header() {
                 Sobre Nós
               </Link>
               <Link
-                href="/#orcamento"
+                href="/solicitar-orcamento"
                 className="bg-yellow-500 text-blue-900 block px-3 py-2 rounded-md text-base font-medium hover:bg-yellow-400"
               >
                 Solicitar Orçamento

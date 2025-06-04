@@ -79,16 +79,17 @@ export default function RootLayout({
                 <ul className="space-y-2 text-gray-300">
                   <li><a href="/servicos/eletrica-industrial">Elétrica Industrial</a></li>
                   <li><a href="/servicos/mecanica-industrial">Mecânica Industrial</a></li>
-                  <li><a href="/servicos/teste-hidraulico">Teste Hidrostático</a></li>
-                  <li><a href="/servicos/laudos">Laudos NR13</a></li>
+                  <li><a href="/servicos/manutencao-hidraulica-pneumatica">Hidráulica e Pneumática</a></li>
+                  <li><a href="/servicos/integridade-estrutural">Integridade Estrutural</a></li>
                 </ul>
               </div>
               <div>
                 <h3 className="text-xl font-bold mb-4">Contato</h3>
                 <ul className="space-y-2 text-gray-300">
                   <li>CNPJ: 42.907.482/0001-08</li>
-                  <li>São Paulo - SP</li>
-                  <li><a href="mailto:contato@imsmanutencao.com.br">contato@imsmanutencao.com.br</a></li>
+                  <li>Guarulhos – São Paulo</li>
+                  <li>Tel: (11) 99124-8868</li>
+                  <li><a href="mailto:orcamento@imsmanutencao.com.br">orcamento@imsmanutencao.com.br</a></li>
                 </ul>
               </div>
             </div>
