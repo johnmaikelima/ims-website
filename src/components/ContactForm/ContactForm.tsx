@@ -2,7 +2,6 @@
 
 import { FormEvent, useState, ChangeEvent, useEffect } from 'react';
 import { FaEnvelope, FaCheckCircle, FaExclamationTriangle } from 'react-icons/fa6';
-import { ClipLoader } from 'react-spinners';
 
 export type FormData = {
   name: string;
@@ -403,7 +402,7 @@ export default function ContactForm() {
         >
           {isSubmitting ? (
             <>
-              <ClipLoader size={20} color="#ffffff" className="mr-3" />
+              <div className="animate-spin h-5 w-5 border-2 border-white border-t-transparent rounded-full mr-3"></div>
               Enviando mensagem...
             </>
           ) : (
