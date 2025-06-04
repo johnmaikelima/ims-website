@@ -220,7 +220,7 @@ export default function EmpresaDeMontagemIndustrialPage() {
             </article>
           </main>
           <aside className="lg:w-1/4">
-            <BlogSidebar />
+            <BlogSidebar currentSlug="empresa-de-montagem-industrial" />
           </aside>
         </div>
       </div>

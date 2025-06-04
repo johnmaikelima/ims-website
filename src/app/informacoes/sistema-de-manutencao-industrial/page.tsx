@@ -277,7 +277,7 @@ export default function SistemaDeManutencaoIndustrialPage() {
             </article>
           </main>
           <aside className="lg:w-1/4">
-            <BlogSidebar />
+            <BlogSidebar currentSlug="sistema-de-manutencao-industrial" />
           </aside>
         </div>
       </div>

@@ -313,7 +313,7 @@ export default function ManutencaoMecanicaIndustrialPage() {
             </article>
           </main>
           <aside className="lg:w-1/4">
-            <BlogSidebar />
+            <BlogSidebar currentSlug="manutencao-mecanica-industrial" />
           </aside>
         </div>
       </div>

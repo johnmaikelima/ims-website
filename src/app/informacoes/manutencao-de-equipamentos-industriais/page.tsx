@@ -267,7 +267,7 @@ export default function ManutencaoEquipamentosIndustriaisPage() {
             </article>
           </main>
           <aside className="lg:w-1/4">
-            <BlogSidebar />
+            <BlogSidebar currentSlug="manutencao-de-equipamentos-industriais" />
           </aside>
         </div>
       </div>

@@ -235,7 +235,7 @@ export default function ManutencaoPreventivaIndustrialPage() {
             </article>
           </main>
           <aside className="lg:w-1/4">
-            <BlogSidebar />
+            <BlogSidebar currentSlug="manutencao-preventiva-industrial" />
           </aside>
         </div>
       </div>
