@@ -1,9 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaTools, FaBuilding, faShieldAlt, FaCheckCircle, FaClipboardCheck } from 'react-icons/fa';
-import { FaIndustry } from 'react-icons/fa';
-import { FaClipboardList } from 'react-icons/fa';
+import { FaTools, FaBuilding, FaShieldAlt, FaCheckCircle, FaClipboardList, FaIndustry } from 'react-icons/fa';
 
 export const metadata: Metadata = {
   title: 'Integridade Estrutural: Garantia de Segurança e Durabilidade | IMS Manutenção',
@@ -25,14 +23,15 @@ export default function IntegridadeEstrutural() {
         </div>
 
         <div className="mt-10">
-          <div className="relative
-            <div className="relative h-64 rounded-lg overflow-hidden">
+          <div className="relative mb-8">
+            <div className="relative h-64 w-full rounded-lg overflow-hidden">
               <Image
                 src="/images/optimized/integridade-estrutural.webp"
                 alt="Análise de Integridade Estrutural"
                 fill
                 className="object-cover"
                 priority
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
           </div>
