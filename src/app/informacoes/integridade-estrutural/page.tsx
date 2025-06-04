@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaTools, FaBuilding, FaShieldAlt, FaCheckCircle, FaClipboardList, FaIndustry } from 'react-icons/fa';
+import { FaTools, FaBuilding, FaShieldAlt, FaCheckCircle, FaIndustry, FaClipboardList } from 'react-icons/fa';
 
 export const metadata: Metadata = {
   title: 'Integridade Estrutural: Garantia de Segurança e Durabilidade | IMS Manutenção',
@@ -36,7 +36,7 @@ export default function IntegridadeEstrutural() {
             </div>
           </div>
 
-          <div className="mt-8 prose prose-indigo prose-lg text-gray-500 mx-auto">
+          <div className="prose prose-indigo prose-lg text-gray-500 mx-auto">
             <h2 className="text-2xl font-bold text-gray-900">O que é Integridade Estrutural?</h2>
             <p>
               A integridade estrutural é um conceito fundamental na engenharia que garante que estruturas e componentes atendam a critérios de desempenho e segurança ao longo de sua vida útil. Envolve a avaliação contínua da capacidade de uma estrutura suportar cargas e condições ambientais sem falhas prematuras.
@@ -64,7 +64,7 @@ export default function IntegridadeEstrutural() {
                     <FaBuilding className="h-6 w-6 text-white" />
                   </div>
                   <div className="ml-4">
-                    <h3 className="text-lg font-medium text-gray-900">Avaliação de Estruturas Existentes</h3>
+                    <h3 className="text-lg font-medium text-gray-900">Avaliação de Estruturas</h3>
                   </div>
                 </div>
                 <p className="mt-2 text-gray-500">
