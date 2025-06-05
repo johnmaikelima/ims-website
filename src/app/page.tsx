@@ -93,7 +93,7 @@ export default function Home() {
           <h2 className="text-3xl font-bold mb-6">Pronto para melhorar sua manutenção industrial?</h2>
           <p className="text-xl mb-8">Entre em contato conosco e solicite um orçamento personalizado</p>
           <a
-            href="/contato"
+            href="/solicitar-orcamento"
             className="bg-yellow-500 text-blue-900 px-8 py-3 rounded-lg font-bold hover:bg-yellow-400 transition-colors inline-block"
           >
             Fale Conosco
