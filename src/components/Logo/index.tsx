@@ -11,7 +11,7 @@ export default function Logo() {
         height={64}
         className="h-16 w-auto"
         priority
-        fallbackSrc="/images/placeholder.svg"
+        fallbackSrc="/images/placeholder.webp"
       />
     </Link>
   )

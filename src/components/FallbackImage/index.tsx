@@ -8,7 +8,7 @@ interface FallbackImageProps extends Omit<ImageProps, 'onError'> {
 export default function FallbackImage({
   src,
   alt,
-  fallbackSrc = '/images/placeholder.svg',
+  fallbackSrc = '/images/placeholder.webp',
   ...props
 }: FallbackImageProps) {
   const [imgSrc, setImgSrc] = useState(src);

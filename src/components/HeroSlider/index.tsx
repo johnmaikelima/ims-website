@@ -153,7 +153,7 @@ export default function HeroSlider() {
                 aria-label={slide.alt || slide.title}
                 onError={(e) => {
                   // Fallback para imagem de fundo
-                  (e.target as HTMLElement).style.backgroundImage = 'url(/images/placeholder.svg)';
+                  (e.target as HTMLElement).style.backgroundImage = 'url(/images/placeholder.webp)';
                 }}
               >
                 {/* Imagem para SEO e acessibilidade com fallback */}
@@ -161,7 +161,7 @@ export default function HeroSlider() {
                   <FallbackImage
                     src={slide.image}
                     alt={slide.alt || slide.title}
-                    fallbackSrc="/images/placeholder.svg"
+                    fallbackSrc="/images/placeholder.webp"
                     width={1200}
                     height={800}
                     loading={index === 0 ? 'eager' : 'lazy'}

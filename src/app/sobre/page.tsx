@@ -156,7 +156,13 @@ export default function About() {
       </section>
 
       {/* Formulário de Contato */}
-      <ContactForm />
+      <section id="orcamento" className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="w-full px-[10%] py-[10%]">
+            <ContactForm />
+          </div>
+        </div>
+      </section>
 
       {/* Botão do WhatsApp */}
       <WhatsAppButton />

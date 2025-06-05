@@ -49,7 +49,7 @@ export default function Header() {
                   height={75}
                   className="h-20 w-auto"
                   priority
-                  fallbackSrc="/images/placeholder.svg"
+                  fallbackSrc="/images/placeholder.webp"
                 />
               </Link>
             </div>

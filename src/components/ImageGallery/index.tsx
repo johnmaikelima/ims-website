@@ -25,7 +25,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
           fill
           className="object-cover rounded-lg"
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-          fallbackSrc="/images/placeholder.svg"
+          fallbackSrc="/images/placeholder.webp"
         />
       </div>
 
@@ -45,7 +45,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
               fill
               className="object-cover"
               sizes="(max-width: 768px) 25vw, 20vw"
-              fallbackSrc="/images/placeholder.svg"
+              fallbackSrc="/images/placeholder.webp"
             />
           </button>
         ))}

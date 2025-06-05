@@ -20,7 +20,7 @@ export default function FeaturedImage({ src, alt, width, height }: FeaturedImage
         className="object-cover"
         priority
         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
-        fallbackSrc="/images/placeholder.svg"
+        fallbackSrc="/images/placeholder.webp"
       />
     </div>
   );
