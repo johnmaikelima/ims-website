@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 import Header from '@/components/Header'
 import WhatsAppButton from '@/components/WhatsAppButton'
 
@@ -66,6 +67,17 @@ export default function RootLayout({
           })(window,document,'script','dataLayer','GTM-M4BFLJ8D');`
         }} />
         {/* End Google Tag Manager */}
+        {/* Google Ads Tag */}
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=AW-17014999584" />
+        <Script id="google-ads">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-17014999584');
+          `}
+        </Script>
+        {/* End Google Ads Tag */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
