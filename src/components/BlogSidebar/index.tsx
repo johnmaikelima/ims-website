@@ -30,6 +30,10 @@ const articles = [
     slug: 'empresa-de-montagem-de-paineis-eletricos'
   },
   {
+    title: 'Instalação de Painel Elétrico Industrial',
+    slug: 'instalacao-de-painel-eletrico-industrial'
+  },
+  {
     title: 'Manutenção Elétrica Industrial',
     slug: 'manutencao-eletrica-industrial'
   },
