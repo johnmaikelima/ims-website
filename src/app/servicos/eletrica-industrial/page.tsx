@@ -4,8 +4,8 @@ import WhatsAppButton from '@/components/WhatsAppButton'
 import ServiceCard from '@/components/ServiceCard'
 
 export const metadata: Metadata = {
-  title: 'Elétrica Industrial | IMS Manutenção',
-  description: 'Serviços especializados em elétrica industrial, incluindo instalação, manutenção, automação e muito mais. Soluções completas para sua indústria.',
+  title: 'Elétrica Industrial em SP',
+  description: 'Serviços especializados em elétrica industrial em SP, incluindo instalação, manutenção, automação e muito mais. Soluções completas para sua indústria.',
   keywords: ['elétrica industrial', 'instalação elétrica', 'manutenção elétrica', 'automação industrial', 'quadros de comando']
 }
 
