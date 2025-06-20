@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['imsmanutencao.com.br', 'localhost'],
+    domains: ['imsmanutencao.com.br', 'localhost'], 'site.imsmanutencao.com.br'],
     formats: ['image/avif', 'image/webp'],
   },
   // Configuração para TypeScript
