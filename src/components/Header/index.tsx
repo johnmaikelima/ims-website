@@ -46,7 +46,7 @@ export default function Header() {
             <div className="flex items-center py-3">
               <Link href="/" className="flex items-center">
                 <FallbackImage
-                  src="https://site.imsmanutencao.com.br/wp-content/uploads/2025/01/imagem_2025-01-13_123646591-768x472.png"
+                  src="/images/logo.png"
                   alt="IMS Manutenção Logo"
                   width={280}
                   height={75}
