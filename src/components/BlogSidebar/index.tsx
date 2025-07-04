@@ -34,6 +34,10 @@ const articles = [
     slug: 'instalacao-de-painel-eletrico-industrial'
   },
   {
+    title: 'Montagem de Painéis Elétricos em SP',
+    slug: 'montagem-de-paineis-eletricos-em-sp'
+  },
+  {
     title: 'Manutenção Elétrica Industrial',
     slug: 'manutencao-eletrica-industrial'
   },

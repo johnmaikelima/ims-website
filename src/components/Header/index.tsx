@@ -25,6 +25,9 @@ const infoPages = [
   { name: 'Empresas de Manutenção', href: '/informacoes/empresas-de-manutencao-industrial' },
   { name: 'Mecânico de Manutenção', href: '/informacoes/mecanico-de-manutencao-industrial' },
   { name: 'Empresa de Montagem', href: '/informacoes/empresa-de-montagem-industrial' },
+  { name: 'Montagem de Painéis Elétricos', href: '/informacoes/empresa-de-montagem-de-paineis-eletricos' },
+  { name: 'Instalação de Painel Elétrico', href: '/informacoes/instalacao-de-painel-eletrico-industrial' },
+  { name: 'Montagem de Painéis Elétricos SP', href: '/informacoes/montagem-de-paineis-eletricos-em-sp' },
   { name: 'Eletricista Industrial', href: '/informacoes/eletricista-industrial' }
 ]
 

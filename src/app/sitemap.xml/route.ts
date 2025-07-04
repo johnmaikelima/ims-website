@@ -24,6 +24,7 @@ const pages = [
   { url: '/informacoes/empresa-de-montagem-industrial', lastmod: new Date().toISOString().split('T')[0], priority: '0.7' },
   { url: '/informacoes/empresa-de-montagem-de-paineis-eletricos', lastmod: new Date().toISOString().split('T')[0], priority: '0.7' },
   { url: '/informacoes/instalacao-de-painel-eletrico-industrial', lastmod: new Date().toISOString().split('T')[0], priority: '0.7' },
+  { url: '/informacoes/montagem-de-paineis-eletricos-em-sp', lastmod: new Date().toISOString().split('T')[0], priority: '0.7' },
   { url: '/informacoes/eletricista-industrial', lastmod: new Date().toISOString().split('T')[0], priority: '0.7' }
 ]
 
